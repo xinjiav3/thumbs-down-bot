@@ -29,6 +29,6 @@ async def on_message(message):
             print(f"Failed to react: {e}")
 
 # Replace with your bot token
-bot.run("YMTM2MTg1NzY2NjIwNDQzNDU3Mw.GT1837.O8W8W2-AI0208aV5AGeqXvOfirShYBPY5XqC0E")
+bot.run("MTM2MTg1NzY2NjIwNDQzNDU3Mw.GclKbv.AQ9dfEFiSG5t9q3TlM-Bw54yVpbsrDcem1OmsE")
 
 bot.run(TOKEN)
