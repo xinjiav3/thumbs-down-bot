@@ -24,7 +24,7 @@ async def on_message(message):
     if "optix" in message.content.lower() or "robotics" in message.content.lower():
         try:
             # React with thumbs down emoji
-            await message.add_reaction("👎")
+            await message.add_reaction("👍")
         except discord.HTTPException as e:
             print(f"Failed to react: {e}")
 
