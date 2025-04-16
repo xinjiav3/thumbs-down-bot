@@ -1,4 +1,9 @@
 import discord
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 
 intents = discord.Intents.default()
 intents.messages = True  # Enables message-related events
@@ -25,3 +30,5 @@ async def on_message(message):
 
 # Replace with your bot token
 bot.run("YMTM2MTg1NzY2NjIwNDQzNDU3Mw.GT1837.O8W8W2-AI0208aV5AGeqXvOfirShYBPY5XqC0E")
+
+bot.run(TOKEN)
