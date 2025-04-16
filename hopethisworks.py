@@ -28,7 +28,7 @@ class MyClient(discord.Client):
         content = message.content.lower()
 
         if "optix is bad" in content or "robotics is bad" in content:
-            await message.add_reaction("👎")
+            await message.add_reaction("👍")
         elif "santhosh" in content and "optix" in content and "good" in content:
             await message.add_reaction("👍")
         elif "optix" in content or "robotics" in content:
