@@ -44,7 +44,7 @@ async def help_command(interaction: discord.Interaction):
         "**Bot Help** 🤖\n"
         "- 👎 Reacts to messages mentioning 'optix' or 'robotics'\n"
         "- 👍 Reacts if someone says 'santhosh', 'optix', and 'good' in the same message\n"
-        "- 👎 Reacts if message includes 'optix is bad' or 'robotics is bad'\n"
+        "- 👍 Reacts if message includes 'optix is bad' or 'robotics is bad'\n"
         "\nTry it out by saying something like 'optix is bad' or 'santhosh is good at optix!'"
     )
 
