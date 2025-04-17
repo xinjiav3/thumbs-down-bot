@@ -7,9 +7,8 @@ TOKEN = os.getenv("DISCORD_BOT_TOKEN2")
 
 intents = discord.Intents.default()
 intents.messages = True
-intents.message_content = True  # Required to read message content
+intents.message_content = True  # slash commands
 
-# Create a custom client class to support slash commands
 class MyClient(discord.Client):
     def __init__(self):
         super().__init__(intents=intents)
@@ -34,10 +33,10 @@ class MyClient(discord.Client):
         elif "optix" in content or "robotics" in content:
             await message.add_reaction("👎")
 
-# Initialize the client
+
 client = MyClient()
 
-# Add the /help command
+# /help command
 @client.tree.command(name="help", description="Get info about what the bot does")
 async def help_command(interaction: discord.Interaction):
     await interaction.response.send_message(
