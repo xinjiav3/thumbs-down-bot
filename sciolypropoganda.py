@@ -5,7 +5,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 
 load_dotenv()
-TOKEN = os.getenv("DISCORD_BOT_TOKEN2")
+TOKEN = os.getenv("SCIOLY_BOT_TOKEN")
 
 intents = discord.Intents.default()
 intents.messages = True
