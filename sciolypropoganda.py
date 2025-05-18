@@ -5,7 +5,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 
 load_dotenv()
-TOKEN = os.getenv("SCIOLY_BOT_TOKEN")
+TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 
 intents = discord.Intents.default()
 intents.messages = True
@@ -34,8 +34,8 @@ class MyClient(discord.Client):
 
         print(f"[DEBUG] Sentiment score: {score} | Message: {content}")
 
-        # quizbowl vs optix logic
-        if "quizbowl" in content and "scioly" in content:
+        # optix vs optix logic
+        if "optix" in content and "scioly" in content:
             if "better" in content or "superior" in content or "beats" in content:
                 await message.add_reaction("👏")
             elif score > 0:
