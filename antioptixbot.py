@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = os.getenv("DISCORD_BOT_TOKEN")
+TOKEN = os.getenv("ANTIOPTIXBOTTOKEN")
 
 intents = discord.Intents.default()
 intents.messages = True
